@@ -1,0 +1,102 @@
+body {
+    background-image: linear-gradient(to right, #313131, #171717);
+    font-family: Helvetica, sans-serif;
+    color: white;
+    padding: 10px;
+    }
+
+    p {
+
+        font-family: Helvetica, sans-serif;
+        color: white;
+        margin: 0;
+        padding: 0;
+        }
+
+a {
+    margin-left: 15px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+
+    }
+    
+    h1 {
+        font-size: 20px;
+        font-weight: 100;
+        color: #FDD162;
+
+        }
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #FEC017;
+    text-align: right;
+    }
+
+.info {
+        font-size: 12px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        color: #8E8E8E;
+        font-style: italic;
+        }
+
+        .container {
+            width: 25%;
+            float: left;
+        }
+
+
+        .box {
+            height: 2450px;
+            padding: 10px;
+            margin: 10px;
+            box-sizing: border-box;
+            border: 1px dotted #6f6f6f;
+            border-radius: 25px;
+        }        
+
+        h2 {
+            font-size: 50px;
+            color: white;
+            font-weight: 100;
+            text-align: right;
+            }
+
+            hr {
+                border: none;
+                border-top: 1px dashed #FDD162;
+                margin-top: 20px;
+                height: 10px;
+              }
+
+              .centered-image {
+                display: flex;
+                justify-content: right;
+                margin-right: 50px;
+                align-items: right;
+            }
+            
+            .centered-image img {
+                width: 10%;
+                height: auto;
+            }
+
+
+            .logo-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .logo-image img {
+                width: 10%;
+                height: auto;
+            }
+            .site {
+                width: 100%;
+                height: 5096px;
+                border: none;
+            }

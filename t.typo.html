@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>g[i] typo tools</title>
+	<link rel="shortcut icon" href="favicon.ico" /> 
+	<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon-180-precomposed.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+	<link rel="stylesheet" type="text/css" href="iframe.css">
+	<meta charset="UTF-8"></head>
+
+</head>
+<body>
+    <br><a href="main.html"><button class="mainButton"><b>main</b> collection</button></a><br>
+	<br>
+
+
+<h1 style="font-weight: 800;">TYPO</h1>
+<button class="loadButton" data-src="https://www.modularscale.com/"><b>Modular Scale</b> type scale tool with golden ratio | eng</button>
+<button class="loadButton" data-src="https://typescale.com/"><b>Type Scale</b> type ratio tool | eng</button>
+<button class="loadButton" data-src="https://utopia.fyi/type/calculator/"><b>typ calculator</b> xxx | eng</button> <br>
+<button class="loadButton" data-src="http://pxtoem.com/"><b>PXtoEM.com</b> PX to EM conversion made simple | eng</button>
+<button class="loadButton" data-src="https://copyglyphs.com/"><b>Copy Glyphs</b> copy & paste special characters | eng</button>
+<button class="loadButton" data-src="https://glyphy.io/cool-symbols"><b>Glyphy</b> copy & paste special characters | eng</button> <br>
+<button class="loadButton" data-src="https://copychar.cc/"><b>Copy Char</b> copy & paste special characters | eng</button>
+<button class="loadButton" data-src="https://www.typewolf.com/"><b>Type Wolf</b> trending and pairing | eng</button>
+<button class="loadButton" data-src="https://fontjoy.com/"><b>Font Joy</b> font pairing | eng</button> <br>
+<button class="loadButton" data-src="https://www.fontget.com/"><b>Font Get</b> free font catalogue | eng</button>
+<button class="loadButton" data-src="https://www.neo2.com/categoria/tipografias-gratuitas/"><b>Neo2</b> free font catalogue | eng</button>
+<button class="loadButton" data-src="https://www.azfonts.net/fonts/free"><b>AZ fonts</b> free font catalogue | eng</button> <br>
+
+<br><br><br>
+
+
+
+
+<div id="iframeContainer"></div>
+
+<script>
+    var loadButtons = document.querySelectorAll(".loadButton");
+    var iframeContainer = document.getElementById("iframeContainer");
+    
+    loadButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var iframeSrc = button.getAttribute("data-src");
+            var existingIframe = iframeContainer.querySelector("iframe");
+            
+            if (existingIframe) {
+                // Se esiste già un iframe, rimuovilo
+                existingIframe.remove();
+            } else {
+                // Altrimenti, crea e carica un nuovo iframe
+                var iframe = document.createElement("iframe");
+                iframe.src = iframeSrc;
+                iframeContainer.appendChild(iframe);
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+</html>

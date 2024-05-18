@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graphic news collection</title>
+    <link rel="stylesheet" type="text/css" href="iframe.css">
+
+</head>
+<body>
+    <br><a href="main.html"><button class="mainButton"><b>main</b> collection</button></a><br>
+<h1>Graphic news collection</h1>
+<button class="loadButton" data-src="https://www.corgae.it/"><b>corGae</b> nozione tecniche colore | ita</button>
+<button class="loadButton" data-src="https://www.indesignskills.com/"><b>InDesign Skills</b> Tutorials, Templates, Inspiration | eng</button>
+<button class="loadButton" data-src="https://yesimadesigner.com/blog/"><b>Yes I'm a Designer</b> graphic blog | eng</button><br>
+<button class="loadButton" data-src="https://blog.momosmedia.it/"><b>Momos Media</b> corsi e tutorial | ita</button>
+<button class="loadButton" data-src="https://vectorguru.org/"><b>Vector Guru</b> blog grafica tecnica | eng</button>
+<button class="loadButton" data-src="https://photoshoproadmap.com/"><b>Photoshop Roadmap</b> tutorial | eng</button><br>
+<button class="loadButton" data-src="https://it.venngage.com/blog/"><b>VennGage</b> marketing e infografiche | ita</button>
+<button class="loadButton" data-src="https://aiap.it/"><b>AIAP</b> associazione comunicazione visiva | ita</button>
+<button class="loadButton" data-src="https://www.ipiratigrafici.it/blog/"><b>i Pirati Grafici</b> blog mondo grafica | ita</button><br>
+<button class="loadButton" data-src="https://adaddictive.com/"><b>AD addictive</b> | ads blog | eng</button>
+<button class="loadButton" data-src="https://www.robertomaiolino.it/blografik/"><b>bloGRAFIK</b> blog grafica | ita</button>
+<br><br><br>
+<div id="iframeContainer"></div>
+
+<script>
+    var loadButtons = document.querySelectorAll(".loadButton");
+    var iframeContainer = document.getElementById("iframeContainer");
+    
+    loadButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var iframeSrc = button.getAttribute("data-src");
+            var existingIframe = iframeContainer.querySelector("iframe");
+            
+            if (existingIframe) {
+                // Se esiste già un iframe, rimuovilo
+                existingIframe.remove();
+            } else {
+                // Altrimenti, crea e carica un nuovo iframe
+                var iframe = document.createElement("iframe");
+                iframe.src = iframeSrc;
+                iframeContainer.appendChild(iframe);
+            }
+        });
+    });
+</script>
+<h2>External links</h2>
+<div>
+    <span style="width: 33%; margin: 2%;"><a href="https://www.robadagrafici.net/" class="lin" target="_blank"><b>Roba Da Grafici</b> community | ita</a> </span>
+    <span style="width: 33%; margin: 2%;"><a href="https://creativepro.com/" class="lin" target="_blank"><b>CreativePro</b> InDesign blog | eng</a></span>
+    <span style="width: 33%; margin: 2%;"><a href="https://tutsplus.com/" class="lin" target="_blank"><b>EnvatoTuts+</b> tutorial  | eng</a></span></div><br>
+<div>
+    <span style="width: 33%; margin: 2%;"><a href="https://www.adsoftheworld.com/" class="lin" target="_blank"><b>Ads of the World</b>  Ads Community | eng</a> </span>
+    <span style="width: 33%; margin: 2%;"><a href="https://99designs.com/blog/" class="lin" target="_blank"><b>99designs</b> blog  | eng</a></span>
+    <span style="width: 33%; margin: 2%;"><a href="https://motiondesign.school/blog/" class="lin" target="_blank"><b>Motion Design School</b> Motion Graphics | eng</a></span>
+
+</div><br>
+
+
+
+
+</body>
+</html>

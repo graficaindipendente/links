@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>g[i] 3D tools</title>
+	<link rel="shortcut icon" href="favicon.ico" /> 
+	<link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon-180-precomposed.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+	<link rel="stylesheet" type="text/css" href="iframe.css">
+	<meta charset="UTF-8"></head>
+
+</head>
+<body>
+    <br><a href="main.html"><button class="mainButton"><b>main</b> collection</button></a><br>
+	<br>
+<h1 style="font-weight: 800;">MESH 3D</h1>
+
+<button class="loadButton" data-src="https://ieslibrary.com/en/browse"><b>IES library</b> libreria luci formato IES | eng</button>
+<button class="loadButton" data-src="https://defkey.com/node-wrangler-blender-shortcuts#59801"><b>DefKey</b> node weangler Blender key shortcuts | eng</button>
+<button class="loadButton" data-src="https://cadmapper.com/"><b>Cad Mapper</b> 1km<sup>2</sup> mappe cad scaricabili | eng</button><br>
+
+
+<br><br><br>
+
+
+
+
+<div id="iframeContainer"></div>
+
+<script>
+    var loadButtons = document.querySelectorAll(".loadButton");
+    var iframeContainer = document.getElementById("iframeContainer");
+    
+    loadButtons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var iframeSrc = button.getAttribute("data-src");
+            var existingIframe = iframeContainer.querySelector("iframe");
+            
+            if (existingIframe) {
+                // Se esiste già un iframe, rimuovilo
+                existingIframe.remove();
+            } else {
+                // Altrimenti, crea e carica un nuovo iframe
+                var iframe = document.createElement("iframe");
+                iframe.src = iframeSrc;
+                iframeContainer.appendChild(iframe);
+            }
+        });
+    });
+</script>
+</body>
+</html>

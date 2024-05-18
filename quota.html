@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>labelCal.tool &amp; printCal.tool</title>
+  <meta charset="UTF-8">
+  <style>
+  
+		body {
+			background-image: url('images/londonbg.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background: linear-gradient(90deg, #574f7d, #3c2a4d);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #F7F2E8;
+			font-family: Helvetica, sans-serif;
+			letter-spacing: 2px;
+			font-weight: 200;
+			margin: 0 auto;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+		}
+	  
+		p {
+			font-size: 15px;
+		}
+    
+		#vers {
+			font-size: 12px;
+			font-style: italic;
+		}
+ 
+		h2 {
+			font-weight: 900;
+			font-size: 20px;
+			color: #F7F2E8;
+		}
+    
+		#box {
+			width: 340px;
+			height: 450px;
+			justify-content: center;
+			align-items: center;
+			border-radius: 25px;
+			color: #fff;
+			text-align: left;
+			line-height: 10px;
+			padding: 30px;
+		}
+    
+        input {
+			width: 90px;
+			height: 30px;
+			text-align: center;
+			border-radius: 25px;
+			border: 0px;
+			}
+    
+		button {
+			padding: 12px 30px;
+			font-family: Helvetica, sans-serif;
+			font-weight: 500;
+			background: linear-gradient(90deg, #847593, #766A82);
+			color: white;
+			border-radius: 25px;
+			font-size: 15px;
+			border: 0px;  
+		}
+
+		button:hover {
+			background: linear-gradient(90deg, #00A878, #00964B);
+		}
+	  
+  </style>
+</head>
+
+<body>
+  <div id="box">
+<h2>ETICHETTE</h2>
+Base: <input type="number" id="base"> <i>mm</i> <br> <br>  
+Altezza: <input type="number" id="altezza"> <i>mm</i> <br> <br> 
+GAP: <input type="number" id="GAP" value=3> <i>mm</i> <br> <br>
+Q.tà: <input type="number" id="pezzi" value=1> <i>pz</i> <br> <br>
+Costo m&#178: <input type="number" id="costo" value=27> <i>euro</i><br> <br>
+<button onclick="calcola()">Processa</button>
+<br><br>
+ <p id="sommariga">
+  <p id="sommacolonna">
+ <p id="risultato"></p> 
+<p id="euro"></p> 
+<p id="totalecosto2"></p> 
+<p id="totPZ6"></p> 
+ </div>
+ 
+<script>
+function calcola() {
+  pezziriga();
+  pezzicolonna();
+  moltiplica();
+  prezzo();
+}
+
+function pezziriga() {
+var valore1 = parseInt(document.getElementById('base').value);  
+var gap1 = parseInt(document.getElementById('GAP').value);  
+var supporto1 = 960;
+var volter = gap1 + valore1 + gap1;
+ var volterg = supporto1 / volter;
+var volterg = Math.round(volterg);
+  document.getElementById("sommariga").innerHTML = "Pz per riga: " + "<strong>" + volterg + " pz</strong>";
+}
+
+function pezzicolonna() {
+var valore2 = parseInt(document.getElementById('altezza').value);  
+var gap2 = parseInt(document.getElementById('GAP').value);  
+var supporto2 = 870;
+var voltec = gap2 + valore2 + gap2;
+ var voltecg = supporto2 / voltec;
+var voltecg = Math.round(voltecg);
+  document.getElementById("sommacolonna").innerHTML = "<strong>" + voltecg + " righe</strong> in un m&#178";
+}
+
+
+function moltiplica() {
+ var valore1 = document.getElementById("base").value;
+  var volter = Math.floor((960 / valore1));
+ var valore2 = document.getElementById("altezza").value;
+  var voltec = Math.floor((870 / valore2));
+  var pzuno = volter;
+  var pzdue = voltec;
+  var risultato = pzuno * pzdue;
+  var risultato = risultato.toLocaleString("it-IT", { style: "decimal" });
+  document.getElementById("risultato").innerHTML = "Pz totali: " + "<strong>" + risultato + " pz/m&#178</strong>";
+}
+
+function prezzo() {
+  var valore1 = document.getElementById("base").value;
+  var volter = Math.floor((960 / valore1));
+  var valore2 = document.getElementById("altezza").value;
+  var voltec = Math.floor((870 / valore2));
+  var pzuno = volter;
+  var pzdue = voltec;
+  var risultato = pzuno * pzdue;
+  var pz = document.getElementById("pezzi").value;
+  var cost = document.getElementById("costo").value;
+  var tot = cost / risultato;
+  var euro;
+  if (tot < 0.05) {
+    euro = 0.05;
+  } else {
+    euro = tot;
+  }
+  var totPZ6 = euro * pz;
+  var euroFormattato = euro.toLocaleString('it-IT', { style: 'currency', currency: 'EUR' });
+  document.getElementById("euro").innerHTML = "<strong>Costo: " + euroFormattato + " cad.</strong> <br>";
+  var euroFormattato6 = totPZ6.toLocaleString('it-IT', { style: 'currency', currency: 'EUR' });
+  document.getElementById("totPZ6").innerHTML = "Totale Costo: " + euroFormattato6;
+}
+	
+</script>
+
+  <div id="box">
+<h2>ADESIVI</h2>
+Base: <input type="number" id="base4"> <i>cm</i> <br> <br>  
+Altezza: <input type="number" id="altezza4"> <i>cm</i> <br> <br> 
+Q.tà: <input type="number" id="pezzi4" value=1> <i>pz</i> <br> <br> 
+Costo m&#178: <input type="number" id="costo4" value=27> <i>euro</i><br> <br>
+<button onclick="prezzo4()">Processa</button>
+<br><br>
+<p id="euro4"></p> 
+<p id="totPZ4"></p> 
+ </div>
+ 
+<script>
+function prezzo4() {
+  var valore14 = document.getElementById("base4").value;
+  var valore24 = document.getElementById("altezza4").value;
+  var valore34 = document.getElementById("pezzi4").value;
+  var pzuno4 = valore14 /100 ;
+  var pzdue4 = valore24 / 100;
+  var risultato4 = pzuno4 * pzdue4;
+  var cost4 = document.getElementById("costo4").value;
+  var tot4 = risultato4 * cost4;
+  var euro4;
+  if (tot4 < 0.05) {
+    euro4 = 0.05;
+  } else {
+    euro4 = tot4;
+  }
+  var totPZ4 = euro4 * valore34;
+  var euroFormattato4 = euro4.toLocaleString('it-IT', { style: 'currency', currency: 'EUR' });
+  document.getElementById("euro4").innerHTML = "PREZZO: " + euroFormattato4 + " cad.<br>";
+  var euroFormattato5 = totPZ4.toLocaleString('it-IT', { style: 'currency', currency: 'EUR' });
+  document.getElementById("totPZ4").innerHTML = "<strong>TOTALE: " + euroFormattato5 + "</strong>";
+}
+	
+</script>
+</body>
+</html>

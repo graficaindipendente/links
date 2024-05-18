@@ -1,0 +1,17 @@
+1) usare un account che vede tutte le grafiche
+
+2) segnare il numero di nuovi ordini da accettare e comunicarlo in team
+
+3) aggiungere il numero di ordini di amazon arrivati al conto e riportarlo in team
+
+4) fare il conto delle ore di lavoro necessarie ad evadere tutto
+
+5) numero ordini da evadere x 1,5 | totale x 4 minuti | totale diviso 60 minuti = ore di lavoro necessarie per evadere tutto
+
+6) verificare se le ore di lavoro dei presenti bastano a seconda di malattie, appuntamenti, ferie etc.
+
+7) comunicare in team =n ore di lavoro totali necessarie ed eventuali richieste di aiuto per evadere tutto quantificate in ore di lavoro
+
+8) se le ore di lavoro sono meno delle ore disponibili lavorabili da team prestampa, dire a team design quante ore avete a disposizione e altro per lavori di grafica montaggi foto editing etc
+
+9) comunicare appena si finiscono gli ordini in grafica oggi appena succede in modo da liberare ore di lavoro necessarie a team design a fine giornata, comunque dire in team OLALLA: numero di grafiche evase / numero di grafiche eventualmente rimaste e perche sono rimaste se sono rimaste
