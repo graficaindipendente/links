@@ -223,6 +223,29 @@ input[type="button"].button-primary:focus {
   border-color: #4DC7CB; }
 
 
+  .button.button-link,
+  button.button-link,
+  input[type="submit"].button-link,
+  input[type="reset"].button-link,
+  input[type="button"].button-link {
+    color: #000;
+    background-color: #FFC018;
+    border-color: #FFC018; }
+  .button.button-link:hover,
+  button.button-link:hover,
+  input[type="submit"].button-link:hover,
+  input[type="reset"].button-link:hover,
+  input[type="button"].button-link:hover,
+  .button.button-link:focus,
+  button.button-link:focus,
+  input[type="submit"].button-link:focus,
+  input[type="reset"].button-link:focus,
+  input[type="button"].button-link:focus {
+    color: #000;
+    background-color: #FFC018;
+    border-color: #FFC018; }
+
+
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 input[type="email"],

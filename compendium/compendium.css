@@ -74,13 +74,13 @@ h3 {
 
               .centered-image {
                 display: flex;
-                justify-content: right;
-                margin-right: 50px;
-                align-items: right;
+                justify-content: center;
+
+                align-items: center;
             }
             
             .centered-image img {
-                width: 10%;
+                width: 20%;
                 height: auto;
             }
 
@@ -100,3 +100,5 @@ h3 {
                 height: 5096px;
                 border: none;
             }
+
+
