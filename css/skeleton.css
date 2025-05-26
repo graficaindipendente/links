@@ -125,7 +125,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #424542; }
+  color: #fff; }
 
 
 /* Typography
@@ -158,9 +158,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #fa824c; }
 a:hover {
-  color: #0FA0CE; }
+  color: #ad5a34; }
 
 
 /* Buttons
@@ -172,19 +172,19 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
-  color: #555;
+  padding: 0 60px;
+  color: #000;
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 900;
   line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
+
+
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
+  background-color: #fa824c;
+  border-radius: 25px;
+
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -228,9 +228,9 @@ input[type="button"].button-primary:focus {
   input[type="submit"].button-link,
   input[type="reset"].button-link,
   input[type="button"].button-link {
-    color: #000;
-    background-color: #FFC018;
-    border-color: #FFC018; }
+    color: #fff;
+    background-color: #000;
+    border-color: #fa824c; }
   .button.button-link:hover,
   button.button-link:hover,
   input[type="submit"].button-link:hover,
@@ -242,8 +242,8 @@ input[type="button"].button-primary:focus {
   input[type="reset"].button-link:focus,
   input[type="button"].button-link:focus {
     color: #000;
-    background-color: #FFC018;
-    border-color: #FFC018; }
+    background-color: #ad5a34;
+    border-color: #ad5a34; }
 
 
 /* Forms
