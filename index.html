@@ -63,26 +63,7 @@
         <br><br>
         <a class="button" href="https://it.stripchat.com" target="_blank"><del>Stripchat</del></a>
             <br><br>
-            <h5>Note</h5>
-
-            <textarea id="contenuto" class="code"></textarea>
-            
-            <script>
-              // Cambia 'appunti.txt' con il nome del tuo file
-              fetch('appunti.txt')
-                .then(response => {
-                  if (!response.ok) throw new Error('Errore nel caricamento');
-                  return response.text();
-                })
-                .then(data => {
-                  document.getElementById('contenuto').value = data;
-                })
-                .catch(error => {
-                  console.error(error);
-                  document.getElementById('contenuto').value = 'Errore nel caricamento del file.';
-                });
-               </script>
-        <br><br>
+          
 
         <h5>Older Links</h5>
         <a class="button" href="https://graficaindipendente.github.io/links/compendium/" target="_blank">g[i] link compendium</a><br>
@@ -95,49 +76,13 @@
 
 
 
-        <!-- <p>Copyright©2024 <a href=" ">Alessandro Piovan</a></p> -->
+
       </div>
     </div>
   </div>
   </div>
-  <!-- Code injected by live-server -->
-  <script>
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-      (function () {
-        function refreshCSS() {
-          var sheets = [].slice.call(document.getElementsByTagName("link"));
-          var head = document.getElementsByTagName("head")[0];
-          for (var i = 0; i < sheets.length; ++i) {
-            var elem = sheets[i];
-            var parent = elem.parentElement || head;
-            parent.removeChild(elem);
-            var rel = elem.rel;
-            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-            }
-            parent.appendChild(elem);
-          }
-        }
-        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-        var address = protocol + window.location.host + window.location.pathname + '/ws';
-        var socket = new WebSocket(address);
-        socket.onmessage = function (msg) {
-          if (msg.data == 'reload') window.location.reload();
-          else if (msg.data == 'refreshcss') refreshCSS();
-        };
-        if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-          console.log('Live reload enabled.');
-          sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-        }
-      })();
-    }
-    else {
-      console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-    // ]]>
-  </script>
+
+ 
 </body>
 
 </html>
