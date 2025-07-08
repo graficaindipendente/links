@@ -1,36 +1,6 @@
-■■■ Retro Games ■■■
-Database → https://retrocatalog.com/
-Trimui Brick → https://trimui-brick.vercel.app/
+xattr -cr /AppLications/JapaneseLife.app 88 codesign —force — -deep
+—sign - /AppLications/JapaneseLife. app
 
-https://cdromance.org/
-https://www.psxrenzukoken.com/nk2/
-https://coolrom.com.au/
+joy.cpl
 
-■■■ traduzioni Retro Games ■■■
-https://www.gamestranslator.it/
-http://lockeworld.altervista.org/Progetti.html  - TRADUZIONI SUPER
-https://www.sadnescity.it/ - TRADUZIONI SUPER
-
-■■■ PC Games ■■■
-https://gamdie.com/
-https://steamsunlocked.org/
-https://gogunlocked.com/
-https://gog-games.to/
-Database → https://steamdb.info/
-
-
-
-■■■ COOLink ■■■
-https://www.hacksplaining.com/lessons
-https://www.codedex.io/html
-https://coddy.tech/onboard
-https://nim.video/
-https://tailornova.com/
-https://seostudio.tools/
-https://www.dungeonscrawl.com/
-https://zoo.dev/text-to-cad
-https://yokaiinn.webflow.io/
-https://roadtrippers.com/
-
-
-Generatore di immagini Flux AI: https://flux1.ai/it
+shell:startup
