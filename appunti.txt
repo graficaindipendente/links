@@ -1,24 +1,9 @@
-https://github.com/LinuxDroidMaster/TrimUI-Brick-101?tab=readme-ov-file#other-community-firmwares
-https://github.com/rulerofoz/AnotherStockMix
-
-
-■ HD4ME https://hd4me.net/lista-film
-■ RETROGAME ONLINE https://consolegame.org/
-
-?logout_p=1
-
-■■■ ESEGUI
-joy.cpl
-shell:startup
-shell:appsfolder
-netplwiz
-
-■■■ Steam Community - All PlayStation Startups
-https://steamcommunity.com/workshop/filedetails/?id=1470559702
-
 ■■■ GAME
 Retro Catalog	https://retrocatalog.com/
 Trimui Brick	https://trimui-brick.vercel.app/
+Steam DB	https://steamdb.info/
+PC Gaming Wiki	https://www.pcgamingwiki.com/wiki/Home
+
 CDromance	https://cdromance.org/
 retrogametalk	https://retrogametalk.com/repository/
 PSXrenzukoken	https://www.psxrenzukoken.com/nk2/
@@ -27,9 +12,8 @@ Gamdie	https://gamdie.com/
 Steamsunlocked	https://steamsunlocked.org/
 GOGunlocked	https://gogunlocked.com/
 Gog-games	https://gog-games.to/
-Steam DB	https://steamdb.info/
 MOXXI PC GAMES	https://moxxi.forumfree.it/?f=64868906
-PC Gaming Wiki	https://www.pcgamingwiki.com/wiki/Home
+
 
 ■■■ TRADUZIONI
 https://romhacking.it/
@@ -47,18 +31,36 @@ The Bunny Graveyard II - https://www.pichongames.com/copy-of-presskit
 
 ■■■ CODING
 https://roadmap.sh/
-■■■ ALTRO
-Generatore immagini	https://flux1.ai/it
-TuttoTrucchi2000	https://tuttotrucchi2000.com/category/giochi+nintendo-switch/
+
 hacksplaining	https://www.hacksplaining.com/lessons
 codedex	https://www.codedex.io/html
 coddy	https://coddy.tech/onboard
+
+■■■ ALTRO
+roadtrippers	https://roadtrippers.com/
+
+Generatore immagini	https://flux1.ai/it
+TuttoTrucchi2000	https://tuttotrucchi2000.com/category/giochi+nintendo-switch/
 nim.vide	https://nim.video/
 tailornova	https://tailornova.com/
 seostudio	https://seostudio.tools/
 dungeonscrawl	https://www.dungeonscrawl.com/
 zoo.dev	https://zoo.dev/text-to-cad
 yokaiinn	https://yokaiinn.webflow.io/
-roadtrippers	https://roadtrippers.com/
+
 Tails https://tails.net/ Linux USB persistente anti traccia 
-retro game online Emulatoronline.com
+
+■ Non-English • freemediaheckyeah
+https://fmhy.net/non-english#streaming-5
+
+■ RETROGAME ONLINE
+https://consolegame.org/
+Emulatoronline.com
+
+
+■■■ ESEGUI
+joy.cpl ► diagnostica controller
+shell:startup ► esecuzione automatica
+shell:appsfolder ► cartella applicazioni
+netplwiz ► gestione account
+ms-cxh:localonly ► aprire win senza account
