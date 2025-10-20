@@ -198,7 +198,7 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
-  border-color: #888;
+
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -207,7 +207,7 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #FDFDC9;
-  border-color: #555; }
+}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -220,7 +220,7 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #FFC018;
-  border-color: #4DC7CB; }
+ }
 
 
   .button.button-link,
@@ -230,7 +230,7 @@ input[type="button"].button-primary:focus {
   input[type="button"].button-link {
     color: #fff;
     background-color: #000;
-    border-color: #fa824c; }
+ }
   .button.button-link:hover,
   button.button-link:hover,
   input[type="submit"].button-link:hover,
@@ -243,8 +243,32 @@ input[type="button"].button-primary:focus {
   input[type="button"].button-link:focus {
     color: #000;
     background-color: #ad5a34;
-    border-color: #ad5a34; }
+ }
 
+            .button.button-other,
+            button.button-other,
+            input[type="submit"].button-other,
+            input[type="reset"].button-other,
+            input[type="button"].button-other {
+              color: #fff;
+              background-color: #ad5a34;
+
+            }
+
+            .button.button-other:hover,
+            button.button-other:hover,
+            input[type="submit"].button-other:hover,
+            input[type="reset"].button-other:hover,
+            input[type="button"].button-other:hover,
+            .button.button-other:focus,
+            button.button-other:focus,
+            input[type="submit"].button-other:focus,
+            input[type="reset"].button-other:focus,
+            input[type="button"].button-other:focus {
+              color: #000;
+              background-color: #ad5a34;
+
+            }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -260,7 +284,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid #D1D1D1;
+
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -289,7 +313,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+
   outline: 0; }
 label,
 legend {
@@ -337,7 +361,7 @@ li {
   font-size: 90%;
   white-space: nowrap;
   background: #000;
-  border: 1px solid #000;
+
   border-radius: 4px; }
 pre > code {
   display: block;
